@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        h3 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            text-align: right;
+        }
+        
+        input[type="button"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            color: #333;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        input[type="button"]:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .operator {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .operator:hover {
+            background-color: #45a049;
+        }
+        
+        #clear {
+            background-color: #f44336;
+            color: white;
+        }
+        
+        #clear:hover {
+            background-color: #e53935;
+        }
+        
+        #equal {
+            background-color: #008CBA;
+            color: white;
+        }
+        
+        #equal:hover {
+            background-color: #007bb5;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3>SIMPLE CALCULATOR</h3>
+    </div>
+    <form name="calc">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="display" id="neelam" value="" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onClick="calc.display.value+='0'"></td>
+                <td><input type="button" value="1" onClick="calc.display.value+='1'"></td>
+                <td><input type="button" value="2" onClick="calc.display.value+='2'"></td>
+                <td><input type="button" class="operator" name="plus" value="+" onClick="calc.display.value+='+'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="3" onClick="calc.display.value+='3'"></td>
+                <td><input type="button" value="4" onClick="calc.display.value+='4'"></td>
+                <td><input type="button" value="5" onClick="calc.display.value+='5'"></td>
+                <td><input type="button" class="operator" name="minus" value="-" onClick="calc.display.value+='-'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="6" onClick="calc.display.value+='6'"></td>
+                <td><input type="button" value="7" onClick="calc.display.value+='7'"></td>
+                <td><input type="button" value="8" onClick="calc.display.value+='8'"></td>
+                <td><input type="button" class="operator" name="times" value="*" onClick="calc.display.value+='*'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="9" onClick="calc.display.value+='9'"></td>
+                <td><input type="button" id="clear" name="clear" value="C" onClick="calc.display.value=''"></td>
+                <td><input type="button" class="operator" name="equal" value="=" onClick="calc.display.value = eval(calc.display.value)"></td>
+                <td><input type="button" class="operator" name="div" value="/" onClick="calc.display.value+='/'"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
