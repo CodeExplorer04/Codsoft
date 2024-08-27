@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+        }
+        
+        header {
+            background-color: #ff9aa2;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero {
+            background-image: url('codsoft1.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        
+        .container {
+            padding: 20px;
+        }
+        
+        .featured-products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            width: calc(33% - 40px);
+        }
+        
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        
+        .product h2 {
+            font-size: 1.5em;
+        }
+        
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Flower Shop</h1>
+        <nav>
+            <a href="#home" style="color: white; margin: 0 15px;">Home</a>
+            <a href="#shop" style="color: white; margin: 0 15px;">Shop</a>
+            <a href="#contact" style="color: white; margin: 0 15px;">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Our Flower Shop</h1>
+    </section>
+
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div class="featured-products">
+            <div class="product">
+                <img src="Rose Bouquet.jpeg" alt="Flower 1">
+                <!-- Replace with your image path -->
+                <h2>Rose Bouquet</h2>
+                <p>600</p>
+            </div>
+            <div class="product">
+                <img src="Lily Arrangement.jpeg" alt="Flower 2">
+
+                <!-- Replace with your image path -->
+                <h2>Lily Arrangement</h2>
+                <p>500</p>
+            </div>
+            <div class="product">
+                <img src="Orchid Vase.jpg" alt="Flower 3">
+                <!-- Replace with your image path -->
+                <h2>Orchid Vase</h2>
+                <p>700</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Flower Shop. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
